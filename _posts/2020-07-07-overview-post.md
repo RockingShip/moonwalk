@@ -70,7 +70,7 @@ Now a table:
 
 ## Images
 
-![theme logo](http://www.abhinavsaxena.com/images/abhinav.jpeg)
+![theme logo](logo.png)
 
 This is an image[^4]
 
