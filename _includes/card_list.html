@@ -1,9 +1,13 @@
 <ul class="horizontal-list">
   {% for item in include.collection %}
 
-    <li class="card">
+    <li class="card{% if item.thumb %} card-thumb{% endif %}">
       <a href="{{ item.url }}">
         <span class="header">
+          {% if item.thumb %}
+            <img src="{{ item.thumb }}" alt="thumb">
+          {% endif %}
+
           {{ item.title }}
 
           {% if item.highlight %}

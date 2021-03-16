@@ -238,6 +238,10 @@ ul.horizontal-list li a {
 	border-radius: 0.8em;
 }
 
+.card-thumb {
+	height: 15em;
+}
+
 .card .header {
 	color: var(--links);
 }
