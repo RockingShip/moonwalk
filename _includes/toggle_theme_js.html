@@ -1,6 +1,6 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script>
 <script type="text/javascript">
-  document.addEventListener('turbolinks:load', themeChange);
+  window.addEventListener('load', themeChange);
+
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
     if (currentTheme)
       document.documentElement.setAttribute('data-theme', currentTheme);
@@ -29,4 +29,3 @@
           }
       }
 </script>
-
