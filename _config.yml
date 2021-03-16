@@ -2,13 +2,15 @@ title: Moonwalk
 author: Abhinav Saxena
 url: https://rockingship.github.io/moonwalk # root address of the site
 description: Theme template
-# favicon: "/favicon32.png"
-# favicon152: "/favicon152.png"
-# favicon196: "/favicon196.png"
+# favicon: /assets/favicon32.png
+# favicon152: /assets/favicon152.png
+# favicon192: /assets/favicon192.png
 
+# jekyll settings
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 #remote_theme: RockingShip/moonwalk
 
+# moonwalk
 theme_config:
   appearance: "light" # can be "light", "dark" or "auto"
   back_home_text: "&#x2343; home" # customize text for homepage link in post layout
@@ -22,9 +24,6 @@ theme_config:
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
 
 highlighter: rouge
-
-sass:
-  style: :compressed
 
 plugins:
   - jekyll-feed
