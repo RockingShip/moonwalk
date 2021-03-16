@@ -14,7 +14,18 @@
   {% seo title=false %}
   {% feed_meta %}
 
-  <link rel="shortcut icon" type="image/x-icon" href="/{{ site.favicon }}" />
-  <link rel="stylesheet" href="{{ site.url }}/assets/moonwalk.css" />
+  {% if site.favicon %}
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.favicon }}" />
+  <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="{{ site.favicon }}" />
+  {% endif %}
+  {% if site.favicon152 %}
+  <link rel="shortcut icon" type="image/png" sizes="152x152" href="{{ site.favicon152 }}" />
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{ site.favicon152 }}" />
+  {% endif %}
+  {% if site.favicon192 %}
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="{{ site.favicon192 }}" />
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="{{ site.favicon192 }}" />
+  {% endif %}
+  <link rel="stylesheet" href="/assets/moonwalk.css" />
   {% include toggle_theme_js.html %}
 </head>
