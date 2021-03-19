@@ -5,7 +5,11 @@
       <a href="{{ item.url }}">
         <span class="header">
           {% if item.thumb %}
-            <img src="{{ item.thumb }}" alt="thumb">
+            {% if item.embed %}
+              {{ item.embed }}
+            {% else %}
+              <img src="{{ item.thumb }}" alt="thumb">
+            {% endif %}
           {% endif %}
 
           {{ item.title }}
