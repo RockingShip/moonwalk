@@ -241,6 +241,11 @@ ul.horizontal-list li a {
 	height: 15em;
 }
 
+.card-embed {
+	width: 240px;
+	height: 124px;
+}
+
 .card .header {
 	color: var(--links);
 }
