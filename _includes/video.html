@@ -1,0 +1,12 @@
+<figure>
+	{% if include.topcaption %}
+	<figcaption>{{ include.topcaption }}</figcaption>
+	{% endif %}
+	<video width="{{ include.width }}" height="{{ include.height }}" controls>
+		<source src="{{ include.url }}" type="video/mp4">
+		Your browser does not support the &lt;video&gt; tag.
+	</video>
+	{% if include.botcaption %}
+	<figcaption>{{ include.botcaption }}</figcaption>
+	{% endif %}
+</figure>
