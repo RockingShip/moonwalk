@@ -2,7 +2,7 @@
 	{% if include.topcaption %}
 	<figcaption>{{ include.topcaption }}</figcaption>
 	{% endif %}
-	<video width="{{ include.width }}" height="{{ include.height }}" controls>
+	<video {% if include.width %}width="{{ include.width }}" height="{{ include.height }}" {% endif %}controls>
 		<source src="{{ include.url }}" type="video/mp4">
 		Your browser does not support the &lt;video&gt; tag.
 	</video>
