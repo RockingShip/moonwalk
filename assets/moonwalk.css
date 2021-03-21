@@ -179,6 +179,7 @@ mark {
 	color: var(--secondary-text);
 	/* margin-bottom: 1rem; */
 	font-size: 0.8em;
+	line-height: 4em;
 }
 
 .home-date {
