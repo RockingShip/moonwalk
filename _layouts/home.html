@@ -18,22 +18,22 @@ layout: default
 {{ content }}
 
 {% if site.theme_config.show_projects == true %}
-  <h2>Portfolio</h2>
+  <h2 id="portfolio">Portfolio</h2>
   {% include card_list.html collection=site.data.home.project_entries %}
 {% endif %}
 
 {% if site.theme_config.show_misc_list == true %}
-  <h2>Details</h2>
+  <h2 id="misc_list">Details</h2>
   {% include vertical_list.html collection=site.data.home.misc_entries %}
 {% endif %}
 
 {% if site.theme_config.show_blog == true %}
-  <h2>Blog</h2>
+  <h2 id="blog">Blog</h2>
   {% include post_list.html %}
 {% endif %}
 
 {% if site.theme_config.show_old_projects == true %}
-  <h2>Old Projects</h2>
+  <h2 id="old_projects">Old Projects</h2>
   {% include card_list.html collection=site.data.home.old_project_entries %}
 {% endif %}
 
