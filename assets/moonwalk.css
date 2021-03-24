@@ -39,6 +39,13 @@ li {
 	padding: 0em 2em;
 }
 
+header {
+	padding-top: 1em;
+}
+header ul {
+	display: inline-block !important;
+}
+
 table, th, td {
 	width: 100%;
 	border: thin solid black;
