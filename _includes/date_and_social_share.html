@@ -1,5 +1,5 @@
 <p class="post-date text-bold text-upcase">
-  {% if page.date %}
+  {%- if page.date -%}
     <span>{{ page.date | date: site.theme_config.date_format_post }}</span>
-  {% endif %}
+  {%- endif -%}
 </p>

@@ -1,34 +1,34 @@
 <ul class="horizontal-list">
-  {% for item in include.collection %}
+  {%- for item in include.collection -%}
 
     <li class="card{% if item.thumb %} card-thumb{% endif %}">
       <a href="{{ item.url }}">
         <span class="header">
-          {% if item.thumb %}
-            {% if item.embed %}
+          {%- if item.thumb -%}
+            {%- if item.embed -%}
               {{ item.embed }}
-            {% else %}
+            {%- else -%}
               <img src="{{ item.thumb }}" alt="thumb">
-            {% endif %}
-          {% endif %}
+            {%- endif -%}
+          {%- endif -%}
 
           {{ item.title }}
 
-          {% if item.highlight %}
+          {%- if item.highlight -%}
             <mark>{{ item.highlight }}</mark>
-          {% endif %}
+          {%- endif -%}
 
         </span>
 
         <hr />
 
-        {% if item.desc != false %}
+        {%- if item.desc != false -%}
         <p class="body">
           {{ item.desc }}
         </p>
-        {% endif %}
+        {%- endif -%}
       </a>
     </li>
 
-  {% endfor %}
+  {%- endfor -%}
 </ul>

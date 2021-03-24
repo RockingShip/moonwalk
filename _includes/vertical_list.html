@@ -1,19 +1,19 @@
 <ul>
-  {% for item in include.collection %}
+  {%- for item in include.collection -%}
     <li>
-    {% if item.url != false %}
+    {%- if item.url != false -%}
       <a href="{{ item.url }}">{{ item.title }}</a>
-    {% else %}
+    {%- else -%}
       {{ item.title }}
-    {% endif %}
+    {%- endif -%}
 
-    {% if item.post_list == true %}
-      {% include post_list.html %}
-    {% endif %}
+    {%- if item.post_list == true -%}
+      {%- include post_list.html -%}
+    {%- endif -%}
 
-    {% if item.entries %}
-      {% include vertical_list.html collection=item.entries %}
-    {% endif %}
+    {%- if item.entries -%}
+      {%- include vertical_list.html collection=item.entries -%}
+    {%- endif -%}
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
