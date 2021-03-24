@@ -73,6 +73,11 @@ img {
 	margin: 0 auto;
 }
 
+a > img {
+	display: inline;
+	vertical-align: middle;
+}
+
 html {
 	--bg: #FFF;
 	--bg-secondary: #f8f8f8;
