@@ -138,6 +138,14 @@ figure {
 	vertical-align: middle;
 }
 
+.xyzzy-mark {
+	background-image: url("xyzzy-32.png");
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .GitHub-mark {
 	background-image: url("GitHub-light-32.png");
 	width: 32px;
