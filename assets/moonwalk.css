@@ -131,7 +131,7 @@ figure {
 }
 
 .GitHub-mark {
-	background-image: url("GitHub-light.gif");
+	background-image: url("GitHub-light-32.png");
 	width: 32px;
 	height: 32px;
 	display: inline-block;
@@ -139,7 +139,7 @@ figure {
 }
 
 html[data-theme="dark"] .GitHub-mark {
-	background-image: url("GitHub-dark.gif");
+	background-image: url("GitHub-dark-32.png");
 }
 
 p, strong, b, em, small, li, hr, table, figcaption {
