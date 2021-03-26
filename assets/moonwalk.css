@@ -130,6 +130,18 @@ figure {
 	margin: 0;
 }
 
+.GitHub-mark {
+	background-image: url("GitHub-light.gif");
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+html[data-theme="dark"] .GitHub-mark {
+	background-image: url("GitHub-dark.gif");
+}
+
 p, strong, b, em, small, li, hr, table, figcaption {
 	color: var(--text);
 }
