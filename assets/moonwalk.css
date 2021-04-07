@@ -67,12 +67,6 @@ blockquote {
 
 blockquote p { margin: 0; }
 
-img {
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-}
-
 a > img {
 	display: inline;
 	vertical-align: middle;
@@ -156,6 +150,15 @@ figure {
 
 html[data-theme="dark"] .GitHub-mark {
 	background-image: url("GitHub-dark-32.png");
+}
+
+.donate {
+	display: inline;
+}
+
+.donate img {
+	display: inline;
+	vertical-align: middle;
 }
 
 p, strong, b, em, small, li, hr, table, figcaption {
@@ -299,6 +302,12 @@ ul.horizontal-list li a {
 
 .card .body {
 	font-size: 0.8em;
+}
+
+.card img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 .card hr {
